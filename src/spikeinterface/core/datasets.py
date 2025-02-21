@@ -88,6 +88,6 @@ def download_dataset(
             known_hash=known_hash,
             progressbar=True,
         )
-        assert full_path == str(expected_full_path)
+        assert full_path == str(expected_full_path.resolve())
 
     return local_path
